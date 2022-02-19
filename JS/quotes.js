@@ -43,7 +43,15 @@ const quotes = [
 
 const chap = document.querySelector("#quote span:first-child");
 const vers = document.querySelector("#quote span:last-child");
-const todaysQuote = quotes[Math.floor(Math.random()*quotes.length)];
 
-chap.innerText = todaysQuote.chapter;
-vers.innerText = todaysQuote.verse;
+function myQuoteToday(){
+   const todaysQuote = quotes[Math.floor(Math.random()*quotes.length)];
+   chap.innerText = todaysQuote.chapter;
+   vers.innerText = todaysQuote.verse;
+};
+
+myQuoteToday();
+setInterval(myQuoteToday,15000);
+
+
+
