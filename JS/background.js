@@ -14,6 +14,8 @@ function getRandomBg(){
     bgImage.src=`img/${todayImage}`;
 };
 
+
+
 getRandomBg();
 setInterval(getRandomBg,15000);
 document.body.appendChild(bgImage);
