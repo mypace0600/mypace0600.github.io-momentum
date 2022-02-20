@@ -6,12 +6,13 @@ const images = [
     "4.jpg",
     "5.jpg",
 ];
+const img ="IMG"
 const bgImage = document.createElement("img");
 bgImage.classList.add("bg");
 
 function getRandomBg(){
     const todayImage = images[Math.floor(Math.random()*images.length)];
-    bgImage.src=`../img/${todayImage}.jpg`;
+    bgImage.src=`../${img}/${todayImage}.jpg`;
 };
 
 
