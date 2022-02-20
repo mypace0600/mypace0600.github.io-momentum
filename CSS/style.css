@@ -7,6 +7,8 @@
   display: none;
 }
 body{
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,57 +17,89 @@ body{
 }
 
 #greeting{
+  z-index: 7;
   color: white;
+  text-shadow: 0.5px 0.5px 0.5px #000;
   position: absolute;
   top:30%;
   font-size: 30px;
 }
 
 #login-form{
-
+  z-index: 6;
   position: absolute;
   top:30%;
+
 }
 
 #clock{
   color: white;
+  text-shadow: 0.5px 0.5px 0.5px #000;
   position: absolute;
   top:15%;
   font-size:45px;
+  z-index: 2;
 }
 
 
 .bg{
   width: 100%;
   height: 100%;
+  z-index:1;
+  animation-name: fadeInAndOut;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fadeInAndOut{
+  0%{
+    opacity: 0;
+  }
+  5%{
+    opacity: 1;
+  }
+  95%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
 }
 
 #quote{
   color: white;
+  text-shadow: 0.5px 0.5px 0.5px #000;
   position: absolute;
   top:85%;
   font-size: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 3;
 }
 
 #weather{
   color: white;
+  text-shadow: 0.5px 0.5px 0.5px #000;
   position: absolute;
   left: 5%;
   top:10%;
   font-size: 13px;
+  z-index: 4;
 }
 
 #todo-form{
   color:black;
   position: absolute;
   top:45%;
+  z-index: 5;
 }
 
 .view{
+  z-index: 8;
   color: white;
+  text-shadow: 0.5px 0.5px 0.5px #000;
   position: absolute;
   top:55%;
   height: 25%;
