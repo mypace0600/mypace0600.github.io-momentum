@@ -12,7 +12,7 @@ bgImage.classList.add("bg");
 
 function getRandomBg(){
     const todayImage = images[Math.floor(Math.random()*images.length)];
-    bgImage.src=`../${img.toUpperCase()}/${todayImage}`;
+    bgImage.src=`${img.toUpperCase()}/${todayImage}`;
 };
 
 
