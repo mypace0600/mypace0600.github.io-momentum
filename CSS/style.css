@@ -29,8 +29,27 @@ body{
   z-index: 6;
   position: absolute;
   top:30%;
-
 }
+#login-input{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid black;
+}
+#login-click{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid black;
+}
+
+#todo-input{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid black;
+}
+
 
 #clock{
   color: white;
